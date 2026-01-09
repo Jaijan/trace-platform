@@ -1,0 +1,166 @@
+.case-details {
+  background: white;
+  padding: 24px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 24px;
+}
+
+.case-details.loading,
+.case-details.error {
+  padding: 40px;
+  text-align: center;
+  color: #666;
+}
+
+.case-details.error {
+  background-color: #fee;
+  border-color: #f88;
+  color: #c33;
+}
+
+/* Case Header */
+.case-header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.case-header > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.case-header strong {
+  color: #333;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.case-id,
+.case-dca {
+  font-family: monospace;
+  font-size: 15px;
+  color: #222;
+}
+
+.case-amount {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.case-status {
+  font-size: 14px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.status-badge.escalated {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffc107;
+}
+
+/* Ledger Section */
+.ledger-section {
+  margin-top: 20px;
+}
+
+.ledger-section h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  color: #222;
+  font-weight: 600;
+}
+
+.ledger-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.ledger-table thead {
+  background-color: #f8f8f8;
+  border-bottom: 2px solid #ddd;
+}
+
+.ledger-table th {
+  padding: 12px 8px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 11px;
+}
+
+.ledger-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #444;
+}
+
+.ledger-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.ledger-table tbody tr.row-breach {
+  background-color: #fff9e6;
+}
+
+.ledger-table tbody tr.row-breach:hover {
+  background-color: #fff3cd;
+}
+
+.cell-day {
+  font-weight: 600;
+  color: #222;
+  font-family: monospace;
+}
+
+.cell-actor {
+  font-weight: 600;
+  padding: 12px 8px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.actor-dca {
+  color: #1e40af;
+  background-color: #dbeafe;
+}
+
+.actor-fedex {
+  color: #7c2d12;
+  background-color: #fed7aa;
+}
+
+.actor-customer {
+  color: #065f46;
+  background-color: #d1fae5;
+}
+
+.cell-action {
+  color: #333;
+  max-width: 300px;
+}
+
+.cell-evidence,
+.cell-breach {
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}

@@ -1,0 +1,151 @@
+.responsibility-timeline {
+  background: white;
+  padding: 24px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 24px;
+}
+
+.responsibility-timeline.loading,
+.responsibility-timeline.error {
+  padding: 40px;
+  text-align: center;
+  color: #666;
+}
+
+.responsibility-timeline.error {
+  background-color: #fee;
+  border-color: #f88;
+  color: #c33;
+}
+
+.responsibility-timeline h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.timeline-subtitle {
+  margin: 0 0 24px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Breakdown Cards */
+.breakdown-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.card {
+  padding: 16px;
+  border-radius: 4px;
+  border-left: 4px solid;
+  background-color: #f9f9f9;
+}
+
+.card-dca {
+  border-left-color: #1e40af;
+  background-color: #eff6ff;
+}
+
+.card-fedex {
+  border-left-color: #b45309;
+  background-color: #fef3c7;
+}
+
+.card-customer {
+  border-left-color: #047857;
+  background-color: #f0fdf4;
+}
+
+.card-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.card-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.card-percent {
+  font-size: 13px;
+  color: #888;
+}
+
+/* Chart Section */
+.chart-section {
+  margin-bottom: 24px;
+}
+
+.chart-section h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+}
+
+.stacked-bar {
+  display: flex;
+  height: 60px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+.bar-segment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.2s;
+}
+
+.bar-segment:hover {
+  opacity: 0.9;
+}
+
+.bar-label {
+  white-space: nowrap;
+}
+
+.bar-dca {
+  background-color: #1e40af;
+}
+
+.bar-fedex {
+  background-color: #b45309;
+}
+
+.bar-customer {
+  background-color: #047857;
+}
+
+/* Insight Box */
+.insight-box {
+  background-color: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.insight-box strong {
+  color: #b45309;
+}
